@@ -30,18 +30,39 @@ void bit_flip() {
     (void)flipped;
 }
 
+void fibonacci_step() {
+    int f0 = 0, f1 = 1;
+    for (int i = 0; i < 10; ++i) {
+        int next = f0 + f1;
+        f0 = f1;
+        f1 = next;
+    }
+    (void)f1;
+}
+
+void average_values() {
+    int values[3] = {12, 18, 24};
+    int total = values[0] + values[1] + values[2];
+    int average = total / 3;
+    (void)average;
+}
+
 extern "C" int gentle_harbor();
-extern "C" void subtle_harbor();
-extern "C" void lucid_canyon();
-extern "C" void subtle_fjord();
+extern "C" void mellow_orbit();
+extern "C" void subtle_lantern();
+extern "C" void quiet_signal();
+extern "C" void silver_haven();
 
 int main() {
     digit_count();
     digit_sum();
     half_value();
     bit_flip();
-    subtle_harbor();
-    lucid_canyon();
-    subtle_fjord();
+    fibonacci_step();
+    average_values();
+    mellow_orbit();
+    subtle_lantern();
+    quiet_signal();
+    silver_haven();
     return gentle_harbor();
 }
